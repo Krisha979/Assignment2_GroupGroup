@@ -15,7 +15,7 @@ public class TeamMemberController_GroupGroup {
 	public TeamMemberController_GroupGroup()	{
 		GroupMembList.add(new GroupMember("Leung, Kin Shing", "leungk24@student.douglascollege.ca", 300369660));
 		GroupMembList.add(new GroupMember("Krisha Mahat", "mahatk@student.douglascollege.ca", 300368184));;
-		GroupMembList.add(new GroupMember("Leung, Kin Shing", "leungk24@student.douglascollege.ca", 300369660));
+		GroupMembList.add(new GroupMember("Kirby Le", "lek6@student.douglascollege.ca", 300258741));
 	}
 	
 	@GetMapping("/")
