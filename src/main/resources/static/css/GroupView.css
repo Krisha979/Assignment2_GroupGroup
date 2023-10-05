@@ -3,8 +3,11 @@
 }
 
 body {
-	margin-right: 20px;
-	margin-left: 20px;
+	margin: 2em;
+}
+
+h1 {
+	text-align: center;
 }
 
 .column {
@@ -18,4 +21,12 @@ body {
 	content: "";
 	clear: both;
 	display: table;
+}
+
+.column > img {
+	width: 100%;
+}
+
+.groupDescriptionContainer {
+	padding: 10px;
 }
