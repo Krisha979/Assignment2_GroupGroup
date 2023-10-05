@@ -17,27 +17,20 @@
 	<h1>Group Member Description</h1>
 
 	<div class="row">
-		<div class="column">
-			<a href="/profile-kle-41"><img src="/imgs/profile_kle_41.jpg" alt="kle41 profile pic"></a>
-		</div>
-		<div class="column">
-			<img src="/imgs/Kma_84_pic.jpg" alt="Forest">
-		</div>
-		<div class="column">
-			<!-- Profile pic for Tommy  -->
-			<!--  <img src="" alt="">  -->
+		<div class="column" th:each="student: ${groupMemberAttribute}">
+			<img th:src="${student.link}" alt="profile pic">
 		</div>
 	</div>
 
 	<div class="groupDescriptionContainer">
 		<p>
-			Group Name: <span th:text="${groupDetails.GroupName}" />
+			Group Name: <span th:text="${groupDetails.groupName}" />
 		</p>
 		<p>
-			No of Members: <span th:text="${groupDetails.NumOfMemb}" />
+			No of Members: <span th:text="${groupDetails.numOfMemb}" />
 		</p>
 		<p>
-			Group Description: <span th:text="${groupDetails.Desc}" />
+			Group Description: <span th:text="${groupDetails.desc}" />
 		</p>
 		<table class="table table-striped">
 			<thead>
@@ -49,9 +42,9 @@
 			</thead>
 			<tbody>
 				<tr th:each="student: ${groupMemberAttribute}">
-					<td th:text="${student.StudentId}"></td>
-					<td th:text="${student.Name}"></td>
-					<td th:text="${student.Email}"></td>
+					<td th:text="${student.studentId}"></td>
+					<td th:text="${student.name}"></td>
+					<td th:text="${student.email}"></td>
 				</tr>
 			</tbody>
 		</table>

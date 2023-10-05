@@ -1,38 +1,38 @@
 package com.CSIS3275.Model;
 
 public class Group {
-	public String GroupName;
-	public int NumOfMemb;
-	public String Desc;
+	public String groupName;
+	public int numOfMemb;
+	public String desc;
 
 	public Group(String groupName, int numOfMemb, String desc) {
-		GroupName = groupName;
-		NumOfMemb = numOfMemb;
-		Desc = desc;
+		this.groupName = groupName;
+		this.numOfMemb = numOfMemb;
+		this.desc = desc;
 	}
 
 	public String getGroupName() {
-		return GroupName;
+		return groupName;
 	}
 
 	public void setGroupName(String groupName) {
-		GroupName = groupName;
+		this.groupName = groupName;
 	}
 
 	public int getNumOfMemb() {
-		return NumOfMemb;
+		return numOfMemb;
 	}
 
 	public void setNumOfMemb(int numOfMemb) {
-		NumOfMemb = numOfMemb;
+		this.numOfMemb = numOfMemb;
 	}
 
 	public String getDesc() {
-		return Desc;
+		return desc;
 	}
 
 	public void setDesc(String desc) {
-		Desc = desc;
+		this.desc = desc;
 	}
 
 }
