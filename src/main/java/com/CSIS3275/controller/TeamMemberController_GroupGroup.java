@@ -13,9 +13,9 @@ import com.CSIS3275.Model.GroupMember;
 public class TeamMemberController_GroupGroup {
 	private ArrayList<GroupMember> GroupMembList = new ArrayList<GroupMember>();
 	public TeamMemberController_GroupGroup()	{
-		GroupMembList.add(new GroupMember("Leung, Kin Shing", "leungk24@student.douglascollege.ca", 300369660));
-		GroupMembList.add(new GroupMember("Krisha Mahat", "mahatk@student.douglascollege.ca", 300368184));;
-		GroupMembList.add(new GroupMember("Kirby Le", "lek6@student.douglascollege.ca", 300258741));
+		GroupMembList.add(new GroupMember("Leung, Kin Shing", "leungk24@student.douglascollege.ca", 300369660, "/imgs/kle_60_pic.jpeg"));
+		GroupMembList.add(new GroupMember("Krisha Mahat", "mahatk@student.douglascollege.ca", 300368184, "/imgs/Kma_84_pic.jpg"));;
+		GroupMembList.add(new GroupMember("Kirby Le", "lek6@student.douglascollege.ca", 300258741, "/imgs/profile_kle_41.jpg"));
 	}
 	
 	@GetMapping("/")
@@ -29,21 +29,11 @@ public class TeamMemberController_GroupGroup {
 		
 	}
 	
-	@GetMapping("/team-member-bio")
-	public String getTeamMemberByName(Model model) {
-		
-		GroupMember member = new GroupMember("Leung, Kin Shing", "leungk24@student.douglascollege.ca", 300369660);
-		
-		model.addAttribute("groupMember", member);
-		
-		return "bio";
-	}
-	
 	@GetMapping("/profile-kle-41")
 	public String renderProfileKle41(Model model) {
 		
 		//instantiate groupMember object
-		GroupMember memberKle41 = new GroupMember("Kirby Le", "lek6@student.douglascollege.ca", 300258741);
+		GroupMember memberKle41 = new GroupMember("Kirby Le", "lek6@student.douglascollege.ca", 300258741, "/imgs/profile_kle_41.jpg");
 		
 		model.addAttribute("groupMember", memberKle41);
 		

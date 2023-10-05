@@ -2,38 +2,48 @@ package com.CSIS3275.Model;
 
 public class GroupMember {
 
-	public String Name;
-	public String Email;
-	public int StudentId;
-
-	public GroupMember(String name, String email, int studentId) {
-		Name = name;
-		Email = email;
-		StudentId = studentId;
+	public String name;
+	public String email;
+	public int studentId;
+	public String link;
+	
+	public GroupMember(String name, String email, int studentId, String link) {
+		this.name = name;
+		this.email = email;
+		this.studentId = studentId;
+		this.link = link;
 	}
 
 	public String getName() {
-		return Name;
+		return name;
 	}
 
 	public void setName(String name) {
-		Name = name;
+		this.name = name;
 	}
 
 	public String getEmail() {
-		return Email;
+		return email;
 	}
 
 	public void setEmail(String email) {
-		Email = email;
+		this.email = email;
 	}
 
 	public int getStudentId() {
-		return StudentId;
+		return studentId;
 	}
 
 	public void setStudentId(int studentId) {
-		StudentId = studentId;
+		this.studentId = studentId;
+	}
+
+	public String getLink() {
+		return link;
+	}
+
+	public void setLink(String link) {
+		this.link = link;
 	}
 
 }
