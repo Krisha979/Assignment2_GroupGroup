@@ -35,9 +35,7 @@ public class TeamMemberController_GroupGroup {
 		//instantiate groupMember object
 		GroupMember memberKle41 = new GroupMember("Kirby Le", "lek6@student.douglascollege.ca", 300258741);
 		
-		//set path for profile picture
-		memberKle41.setProfilePicturePath("/imgs/profile_kle_41.jpg");
-		
+		model.addAttribute("groupMember", memberKle41);
 		
 		return "profile-kle-41";
 	}
