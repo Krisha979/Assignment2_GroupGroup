@@ -2,43 +2,22 @@ package com.CSIS3275.Model;
 
 public class GroupMember {
 
-	public String FirstName;
-	public String LastName;
+	public String Name;
 	public String Email;
 	public int StudentId;
-	public String ProfileDescription;
 
-	//four parameter constructor
-	public GroupMember(String fName, String lName, String email, int studentId) {
-		this.FirstName = fName;
-		this.LastName = lName;
-		this.Email = email;
-		this.StudentId = studentId;
-	}
-	
-	
-	public String getProfileDescription() {
-		return ProfileDescription;
+	public GroupMember(String name, String email, int studentId) {
+		Name = name;
+		Email = email;
+		StudentId = studentId;
 	}
 
-	public void setProfileDescription(String profileDescription) {
-		ProfileDescription = profileDescription;
+	public String getName() {
+		return Name;
 	}
 
-	public String getFirstName() {
-		return FirstName;
-	}
-
-	public void setFirstName(String firstName) {
-		FirstName = firstName;
-	}
-
-	public String getLastName() {
-		return LastName;
-	}
-
-	public void setLastName(String lastName) {
-		LastName = lastName;
+	public void setName(String name) {
+		Name = name;
 	}
 
 	public String getEmail() {
