@@ -18,7 +18,7 @@
 
 	<div class="row">
 		<div class="column" th:each="student: ${groupMemberAttribute}">
-			<img th:src="${student.link}" alt="profile pic">
+			<a th:href="${student.linkToBio}"><img th:src="${student.link}" alt="profile pic"></a>
 		</div>
 	</div>
 
