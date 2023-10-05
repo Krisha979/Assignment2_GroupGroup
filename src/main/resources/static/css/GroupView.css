@@ -1,0 +1,21 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 20px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
