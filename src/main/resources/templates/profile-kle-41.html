@@ -2,11 +2,11 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Profile - Kirby Le</title>
+<title th:text="${'Profile Page - ' + groupMember.Name}"></title>
 <link rel="stylesheet" href="/css/profileStyles.css">
 </head>
 <body>
-	<h1>Kirby Le - 300258741</h1>
+	<h1 th:text="${groupMember.Name + ' - ' + groupMember.StudentId}"></h1>
 	<div class="flex-container">
 		<div class="profile-container">
 			<div class="profile-bio">
