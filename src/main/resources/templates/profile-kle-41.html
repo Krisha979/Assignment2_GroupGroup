@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title th:text="${'Profile Page - ' + groupMember.Name}"></title>
+<link rel="stylesheet" href="/css/profileStyles.css">
+</head>
+<body>
+	<h1 th:text="${groupMember.Name + ' - ' + groupMember.StudentId}"></h1>
+	<div class="flex-container">
+		<div class="profile-container">
+			<div class="profile-bio">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Pellentesque et dui in lectus mattis dignissim. Proin ultricies dui
+					eget tellus finibus, sit amet posuere odio venenatis. Donec maximus
+					tortor a nisl ultrices condimentum. Ut et consectetur lorem. Duis
+					dapibus elementum dui vitae iaculis. Phasellus ornare vehicula
+					ligula, id venenatis est venenatis nec. In imperdiet vestibulum
+					orci ut molestie. Quisque eu lectus nec nisi lobortis euismod a ut
+					tortor. Nullam laoreet mattis metus eget iaculis. Donec eu erat
+					lorem. Fusce eu aliquam risus. Proin fringilla, quam in scelerisque
+					sagittis, lorem risus varius sem, feugiat efficitur turpis magna
+					eget eros.</p>
+				<p>Praesent at ullamcorper risus. Phasellus molestie et leo vel
+					viverra. Sed ut imperdiet erat. Nunc faucibus ante sit amet sem
+					dignissim hendrerit. Vivamus rutrum, ante fermentum scelerisque
+					fermentum, mauris est rutrum lacus, a congue orci quam in velit.
+					Sed euismod risus a urna ornare, non tempus justo sollicitudin.
+					Suspendisse potenti. Phasellus purus risus, posuere non cursus et,
+					dapibus vitae nisl.</p>
+				<p>Phasellus ut mi est. Sed venenatis placerat egestas. Sed quis
+					massa a lectus faucibus tempor. Curabitur auctor, dolor et congue
+					mattis, est enim placerat arcu, nec accumsan enim ante id massa.
+					Donec placerat nibh dolor, id aliquet neque cursus a. Aliquam vitae
+					placerat enim. Praesent venenatis purus ut elementum venenatis.
+					Phasellus tincidunt, purus eget hendrerit consectetur, nibh metus
+					blandit neque, dignissim consectetur odio ante at tortor.
+					Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+					posuere cubilia curae; Sed mollis interdum ornare. Vestibulum
+					blandit dignissim rhoncus. Aenean sed semper velit, nec scelerisque
+					orci. Nulla ultricies dictum egestas. Maecenas ut est porttitor,
+					hendrerit ante vitae, pharetra leo.</p>
+			</div>
+			<div class="profile-picture-container">
+				<img src="/imgs/profile_kle_41.jpg" alt="profile_picture_kle_41">
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
