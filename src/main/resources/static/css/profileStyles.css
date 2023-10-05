@@ -1,0 +1,35 @@
+@charset "ISO-8859-1";
+
+body {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.flex-container {
+	display: flex;
+}
+
+.profile-picture-container {
+	width: 50%;
+	text-align: center;
+}
+
+.profile-bio {
+	width: 50%;
+}
+
+img {
+	width: 50%;
+}
+
+.profile-container {
+	display: flex;
+	align-items: center;
+	padding: 4em;
+}
+
+p {
+	margin-bottom: 4em;
+}
+
