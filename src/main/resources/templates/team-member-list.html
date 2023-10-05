@@ -1,10 +1,61 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GroupGroup Descriptions</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+	crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="/css/GroupView.css" />
 </head>
 <body>
+
+	<h1>Group Member Description</h1>
+
+	<div class="row">
+		<div class="column" th:each="student: ${groupMemberAttribute}">
+			<a th:href="${student.linkToBio}"><img th:src="${student.link}" alt="profile pic"></a>
+		</div>
+	</div>
+
+	<div class="groupDescriptionContainer">
+		<p>
+			Group Name: <span th:text="${groupDetails.groupName}" />
+		</p>
+		<p>
+			No of Members: <span th:text="${groupDetails.numOfMemb}" />
+		</p>
+		<p>
+			Group Description: <span th:text="${groupDetails.desc}" />
+		</p>
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<td>Id</td>
+					<td>Full Name</td>
+					<td>Email</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="student: ${groupMemberAttribute}">
+					<td th:text="${student.studentId}"></td>
+					<td th:text="${student.name}"></td>
+					<td th:text="${student.email}"></td>
+				</tr>
+			</tbody>
+		</table>
+
+	</div>
+
+	<!-- bootstrap scripts -->
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+		crossorigin="anonymous"></script>
 
 </body>
 </html>

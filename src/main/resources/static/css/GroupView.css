@@ -1,0 +1,32 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 2em;
+}
+
+h1 {
+	text-align: center;
+}
+
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 20px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.column img {
+	width: 100%;
+}
+
+.groupDescriptionContainer {
+	padding: 10px;
+}
