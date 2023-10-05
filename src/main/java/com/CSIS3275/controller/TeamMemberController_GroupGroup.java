@@ -28,4 +28,17 @@ public class TeamMemberController_GroupGroup {
 		
 		return "bio";
 	}
+	
+	@GetMapping("/profile-kle-41")
+	public String renderProfileKle41(Model model) {
+		
+		//instantiate groupMember object
+		GroupMember memberKle41 = new GroupMember("Kirby Le", "lek6@student.douglascollege.ca", 300258741);
+		
+		//set path for profile picture
+		memberKle41.setProfilePicturePath("/imgs/profile_kle_41.jpg");
+		
+		
+		return "profile-kle-41";
+	}
 }
